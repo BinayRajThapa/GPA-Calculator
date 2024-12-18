@@ -10,7 +10,6 @@ typedef struct{
 }info;
 
 char subject[9][9], grade[9][3], y_sem[7];
-
 int tcredit, credit[9], sub_no;
 
 void sem1(), sem2(), sem3(), sem4(), sem5(), sem6(), sem7(), sem8();
@@ -26,16 +25,11 @@ int main()
     
     //INPUT SEMESTER
     start:
-    system("color 8f");
+    system("color 9f");
     do{
         system("cls");
         
         printf("\n\n\n\t<<<<<<<<<<<<<   KATHMANDU UNIVERSITY GPA PORTAL   >>>>>>>>>>>>>\n");
-        printf("\t\t\t\t\t\t\tCreated by:\n");
-        printf("\t\t\t\t\t\t\tShubin Pokhrel\n");
-        printf("\t\t\t\t\t\t\tShashwat Khadka\n");
-        printf("\t\t\t\t\t\t\tSiddhartha Pradhan\n");
-        printf("\t\t\t\t\t\t\tBinaya Raj Thapa\n\n\n");
         
         wrong = 0;
         printf("\tEnter your semester: ");
@@ -60,11 +54,7 @@ int main()
     do{
         system("cls");
         printf("\n\n\n\t<<<<<<<<<<<<<   KATHMANDU UNIVERSITY GPA PORTAL   >>>>>>>>>>>>>\n");
-        printf("\t\t\t\t\t\t\tCreated by:\n");
-        printf("\t\t\t\t\t\t\tShubin Pokhrel\n");
-        printf("\t\t\t\t\t\t\tShashwat Khadka\n");
-        printf("\t\t\t\t\t\t\tSiddhartha Pradhan\n");
-        printf("\t\t\t\t\t\t\tBinaya Raj Thapa\n\n\n");
+    
         wrong2 == 0;
         printf("\t1. View Report Card\t");
         printf("2. Add Marks\t");
@@ -76,11 +66,6 @@ int main()
         if(choice == 2){
             system("cls");
             printf("\n\n\n\t<<<<<<<<<<<<<   KATHMANDU UNIVERSITY GPA PORTAL   >>>>>>>>>>>>>\n");
-            printf("\t\t\t\t\t\t\tCreated by:\n");
-            printf("\t\t\t\t\t\t\tShubin Pokhrel\n");
-            printf("\t\t\t\t\t\t\tShashwat Khadka\n");
-            printf("\t\t\t\t\t\t\tSiddhartha Pradhan\n");
-            printf("\t\t\t\t\t\t\tBinaya Raj Thapa\n\n\n");
         
             fflush(stdin);
             printf("\n\tRoll Number: ");
@@ -133,11 +118,6 @@ int main()
             system("color b");
             system("cls");
             printf("\n\n\n\t<<<<<<<<<<<<<   KATHMANDU UNIVERSITY GPA PORTAL   >>>>>>>>>>>>>\n");
-            printf("\t\t\t\t\t\t\tCreated by:\n");
-            printf("\t\t\t\t\t\t\tShubin Pokhrel\n");
-            printf("\t\t\t\t\t\t\tShashwat Khadka\n");
-            printf("\t\t\t\t\t\t\tSiddhartha Pradhan\n");
-            printf("\t\t\t\t\t\t\tBinaya Raj Thapa\n\n\n");
             
             printf("\n\tRoll Number: ");
             scanf("%d", &r);
@@ -376,7 +356,7 @@ void sem7()
     strcpy(subject[1], "COMP 401");
     strcpy(subject[2], "COMP 472");
     strcpy(subject[3], "ELECT 01");
-    strcpy(subject[4], "ELECT 02");
+    
     tcredit = 0;
     for (i = 0, n = 3; i < sub_no; i++){
         credit[i] = n;
@@ -391,6 +371,7 @@ void sem8()
     strcpy(subject[0], "COMP 408");
     strcpy(subject[1], "MGTS 402");
     strcpy(subject[2], "COMP 486");
+    strcpy(subject[3], "ELECT 02");
     tcredit = 0;
     for (i = 0, n = 6; i < sub_no; i++){
         if (i == 1) n = 3;
